@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+    
+	<head>
+	    
+	    <title>Práctica 08 Galería con Lightbox - Image sets</title>
+	    
+	    <meta charset="UTF-8">
+	    
+	    <meta name="description" content="Galería de imágenes">
+	    
+	    <meta name="keywords" content="Galería de imágenes">
+	    
+
+	    <!-- UTILIZAREMOS ESTA DEFINICIÓN SOBRETODO PARA OPTIMIZAR NUESTRA WEB EN PANTALLAS DE MÓVILES, AL DETECTAR EL TAMAÑO DEL VISOR DÓNDE CONTENEMOS NUESTRAS PÁGINA WEB. MÁS INFO: https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+	    
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+
+	    <!--ENLACE A RECURSO LOCAL, ICONOS DE LA WEB FONTSAWESOME.COM-->
+	    <link href="css/fontawesome-all.css" rel="stylesheet">
+
+
+	    <!--ENLACE A RECURSO LOCAL, CSS-->
+	    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+
+
+	   	<!--ENLACE A RECURSO LOCAL, LIBRERÍA JQUERY (JS)-->
+	    <link rel="stylesheet" href="js/jquery-3.3.1.js" type="text/javascript">
+
+
+	   	<!--ENLACE A RECURSO LOCAL, LIGHTBOX (CSS)-->
+	    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+
+
+	    <!--ENLACE A RECURSO LOCAL, LIGHTBOX (JS)-->
+	    <link rel="stylesheet" href="js/lightbox.js" type="text/javascript">
+	    
+	    
+	</head>
+    
+    
+<body>
+    
+    <header>
+        
+        <h1>Galería con Lightbox - Image sets</h1>
+        
+    
+    </header>
+    
+    <main>
+        
+        <article>
+            
+            <figure> 
+
+            	<!--IMPORTANCIA DE 'DATA-LIGHTBOX' CON NOMBRES IGUALES PARA HACER SET DE IMÁGENES (IMAGE SETS)-->
+
+                <a href="img/cable-car-to-heaven.jpg" data-lightbox="images" data-title="carcable"><img src="img/cable-car-to-heaven.jpg"  alt="carcable" width="320px"></a>
+                <figcaption>1.Teleférico de Montjuïc</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>    
+        
+        <article>
+        
+            <figure> 
+
+                <a href="img/el-seductor.jpg" data-lightbox="images" data-title="seductor"><img src="img/el-seductor.jpg" alt="seductor" width="320px"></a>
+                <figcaption>2.Seductor</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <a href="img/locked-behind-bars.jpg" data-lightbox="images" data-title="behindbars"><img src="img/locked-behind-bars.jpg" alt="behindbars" width="320px"></a>
+                <figcaption>3.Cárcel</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                 <a href="img/opresiva-presencia.jpg" data-lightbox="images" data-title="behindbars"><img src="img/opresiva-presencia.jpg" alt="opresiva" width="320px"></a>
+                <figcaption>4.Opresiva presencia</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <a href="img/perro-italica-bold.jpg" data-lightbox="images" data-title="perro"><img src="img/perro-italica-bold.jpg" alt="perro" width="320px"></a>
+                <figcaption>5.Perro</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <a href="img/rejilla-perspectiva.jpg" data-lightbox="images" data-title="rejilla"><img src="img/rejilla-perspectiva.jpg" alt="rejilla" width="320px"></a>
+                <figcaption>6.Rejilla</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                 <a href="img/speech-ballon.jpg" data-lightbox="images" data-title="speech"><img src="img/speech-ballon.jpg" alt="speech" width="320px"></a>
+                <figcaption>7.Speech</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+
+    </main>
+    
+    <footer>
+    
+        <p>Galería de fotos de Gerard <span class="far fa-copyright"></span></p>
+    
+    </footer>
+
+
+    <!-- AÑADIR ESTOS SCRIPTS PARA QUE FUNCIONE EL LIGHTBOX-->
+
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script src="js/lightbox.js"></script>
+     
+
+</body>
+    
+    
+</html>

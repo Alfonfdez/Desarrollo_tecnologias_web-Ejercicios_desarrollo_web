@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+    
+<head>
+    
+    <title>Práctica 10.1 Float</title>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Galería de imágenes">
+    
+    <meta name="keywords" content="Galería de imágenes">
+    
+    <!-- UTILIZAREMOS ESTA DEFINICIÓN SOBRETODO PARA OPTIMIZAR NUESTRA WEB EN PANTALLAS DE MÓVILES, AL DETECTAR EL TAMAÑO DEL VISOR DÓNDE CONTENEMOS NUESTRAS PÁGINA WEB. MÁS INFO: https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--ENLACE A RECURSO LOCAL, ICONOS DE LA WEB FONTSAWESOME.COM-->
+    
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    
+    <style type="text/css">
+            
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            /* FIN RESET DE MEYER */
+        
+        body {
+            font-family: arial, sans-serif;
+              
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(255,255,255,0.5);
+            width: 100%;
+        }
+        
+        main {
+            margin-top: 50px;
+        }
+        
+        footer {
+            float: left;
+            clear: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        article {
+            float: left;
+            margin: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px;
+            color: #335CFF;
+        }
+        
+        figcaption {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+    
+
+        
+        
+        
+       
+    </style>
+    
+</head>
+    
+    
+<body>
+    
+    <header>
+        
+        <h1>Galería de fotos 10.1 Float</h1>
+        
+    
+    </header>
+    
+    <main>
+        
+        <article>
+            
+            <figure> 
+
+                <img src="img/cable-car-to-heaven.jpg" alt="carcable" width="320px">
+                <figcaption>1.Teleférico de Montjuïc</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>    
+        
+        <article>
+        
+            <figure> 
+
+                <img src="img/el-seductor.jpg" alt="seductor" width="320px">
+                <figcaption>2.Seductor</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <img src="img/locked-behind-bars.jpg" alt="behindbars" width="320px">
+                <figcaption>3.Cárcel</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <img src="img/opresiva-presencia.jpg" alt="opresiva" width="320px">
+                <figcaption>4.Opresiva presencia</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <img src="img/perro-italica-bold.jpg" alt="perro" width="320px">
+                <figcaption>5.Perro</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <img src="img/rejilla-perspectiva.jpg" alt="rejilla" width="320px">
+                <figcaption>6.Rejilla</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <figure> 
+
+                <img src="img/speech-ballon.jpg" alt="speech" width="320px">
+                <figcaption>7.Speech</figcaption><span class="far fa-images fa-2x"></span>
+
+            </figure>
+            
+        </article>
+        
+
+    </main>
+    
+    <footer>
+    
+        <p>Galería de fotos de Gerard <span class="far fa-copyright"></span></p>
+    
+    </footer>
+     
+
+</body>
+    
+    
+</html>

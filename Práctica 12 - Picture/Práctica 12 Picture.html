@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+    
+<head>
+    
+    <title>Práctica 12 Picture</title>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Galería de imágenes">
+    
+    <meta name="keywords" content="Galería de imágenes">
+    
+    <!-- UTILIZAREMOS ESTA DEFINICIÓN SOBRETODO PARA OPTIMIZAR NUESTRA WEB EN PANTALLAS DE MÓVILES, AL DETECTAR EL TAMAÑO DEL VISOR DÓNDE CONTENEMOS NUESTRAS PÁGINA WEB. MÁS INFO: https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--ENLACE A RECURSO LOCAL, ICONOS DE LA WEB FONTSAWESOME.COM-->
+    
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    
+    <style type="text/css">
+            
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            /* FIN RESET DE MEYER */
+        
+        body {
+            font-family: arial, sans-serif;   
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(255,255,255,0.5);
+            width: 100%;
+        }
+        
+        main {
+            margin-top: 80px;
+        }
+        
+        footer {
+            float: left;
+            clear: left;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        article {
+            background-color: #DBB441;
+            margin: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px;
+            color: #335CFF;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            background-size:auto;
+            background-color: #000000;
+            margin: 10px;   
+        }
+        
+        figcaption {
+            font-size: 14px;
+            font-weight: bold;
+            font-style: oblique;
+        }
+        
+    </style>
+    
+</head>
+    
+    
+<body>
+    
+    <header>
+        
+        <h1>Práctica 12 Picture</h1>
+        
+    </header>
+    
+    
+    <main>
+        
+        <article>
+            
+            <h2>Cubo volador</h2>
+            
+            <!-- CON LA ETIQUETA <picture> PODEMOS CONTENER IMÁGENES <img> DE DISTINTOS TAMAÑOS QUE APARECERÁN SEGÚN EL TAMAÑO DEL DISPOSITIVO DONDE ESTÉ RENDERIZANDO LA WEB -->
+            
+            <figure>  
+                <picture> 
+
+                    <source srcset="img/cable-car-to-heaven768px.jpg" media="(min-width:768px)">
+                    <source srcset="img/cable-car-to-heaven640px.jpg" media="(min-width:640px)">
+                    <img src="img/cable-car-to-heaven320px.jpg" alt="carcable">
+                    <figcaption>Teleférico de Montjuïc. Imagen de archivo</figcaption>
+ 
+                </picture>
+            </figure>
+            
+        </article>    
+        
+        <article>
+            
+            <h2>Seductor barcelonés</h2>
+        
+            <figure>
+                <picture> 
+
+                    <source srcset="img/el-seductor768px.jpg" media="(min-width: 768px)">
+                    <source srcset="img/el-seductor640px.jpg" media="(min-width: 640px)">
+                    <img src="img/el-seductor320px.jpg" alt="seductor">          
+                    <figcaption>Viandante parado en un semáforo. Imagen de archivo</figcaption>
+                    
+                </picture>
+            </figure>
+            
+        </article>
+        
+        <article>
+        
+            <h2>Encerrado</h2>
+            
+            <figure>
+                <picture> 
+
+                    <source srcset="img/locked-behind-bars768px.jpg"  media="(min-width: 768px)">
+                    <source srcset="img/locked-behind-bars640px.jpg"  media="(min-width: 640px)">
+                    <img src="img/locked-behind-bars320px.jpg" alt="behind">
+                    <figcaption>Publicidad detrás de una verja. Imagen de archivo</figcaption>
+
+                </picture>
+            </figure>
+            
+        </article>
+        
+        <article>
+            
+            <h2>Mordor</h2>
+        
+            <figure>
+                <picture> 
+
+                   <source srcset="img/opresiva-presencia768px.jpg" media="(min-width: 768px)">
+                    <source srcset="img/opresiva-presencia640px.jpg" media="(min-width: 640px)">
+                    <img src="img/opresiva-presencia320px.jpg" alt="opresiva">        
+                    <figcaption>Edificio del Ayuntamiento de Barcelona. Imagen de archivo</figcaption>
+
+                </picture>
+            </figure>
+            
+        </article>
+        
+        <article>
+            
+            <h2>Perro fofisano</h2>
+        
+            <figure>
+                <picture> 
+
+                    <source srcset="img/perro-italica-bold768px.jpg" media="(min-width: 768px)">
+                    <source srcset="img/perro-italica-bold640px.jpg" media="(min-width: 640px)">
+                    <img src="img/perro-italica-bold320px.jpg" alt="perro">      
+                    <figcaption>Bulldog francés observando. Imagen de archivo</figcaption>
+
+                </picture>
+            </figure>
+            
+        </article>
+        
+        <article>
+            
+            <h2>Rejilla</h2>
+        
+            <figure>
+                <picture> 
+
+                    <source srcset="img/rejilla-perspectiva768px.jpg" media="(min-width: 768px)">
+                    <source srcset="img/rejilla-perspectiva640px.jpg" media="(min-width: 640px)">
+                    <img src="img/rejilla-perspectiva320px.jpg" alt="rejilla">   
+                    <figcaption>Rejilla en perspectiva. Imagen de archivo</figcaption>
+
+                </picture>
+            </figure>
+            
+        </article>
+        
+        <article>
+            
+            <h2>Bocadillo</h2>
+        
+            <figure>
+                <picture>
+
+                    <source srcset="img/speech-ballon768px.jpg" media="(min-width: 768px)">
+                    <source srcset="img/speech-ballon640px.jpg" media="(min-width: 640px)">
+                    <img src="img/speech-ballon320px.jpg" alt="speech">
+                    <figcaption>Silueta al atardecer de edificios barceloneses. Imagen de archivo</figcaption>
+
+                </picture>
+            </figure>    
+            
+        </article>
+        
+
+    </main>
+    
+    
+    <footer>
+    
+        <p>Galería de fotos de Gerard <span class="far fa-copyright"></span></p>
+    
+    </footer>
+     
+
+</body>
+    
+    
+</html>

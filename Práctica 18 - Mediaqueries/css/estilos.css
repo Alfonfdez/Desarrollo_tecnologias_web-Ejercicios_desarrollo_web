@@ -1,0 +1,294 @@
+
+/*RESET DE MEYER*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*FIN DEL RESTE DE MEYER*/
+
+
+/*------------------------------------------------------------------------------------*/
+
+a:visited {
+	color: white;
+}
+
+body {
+	font-family: arial;
+	font-size: 1em;
+	margin: 30px;
+}
+
+header, footer {
+	background-color: black;
+	text-align: center;
+	margin-top: 20px;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: bolder;
+	color: white;
+	margin: 0 0 10px 0;
+}
+
+li {
+	font-size: 1.25em;
+	color: white;
+	background-color: blue;
+	text-align: center;
+	margin: 0 0 10px 0;
+	display: block;
+	vertical-align: middle;
+}
+
+.fas {
+	font-size: 2em;
+	color: white;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+}
+
+p.fecha {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+p.share {
+	font-size: 0.9em;
+	display: block;
+}
+
+p.comentario {
+	margin-top: 10px;
+}
+
+img.foto  {
+	margin: 10px 5px 20px 0;
+}
+
+img.foto2  {
+	margin: 10px 0 20px 0;
+}
+
+img.logo-twitter {
+	width: 40px;
+}
+
+img.logo-facebook{
+	width: 30px;
+}
+
+.noticia {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.articulo5 {
+	background-color: grey;
+}
+
+.destacada {
+	text-align: center;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+/*-----------------------------------@0px-@480px-----------------------------------*/
+
+@media screen and (max-width:480px) {
+/*0px a 480px de resolución*/
+
+
+
+
+}
+
+/*-----------------------------------@0px-@480px-----------------------------------*/
+
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+
+/*-----------------------------------@481px-@700px---------------------------------*/
+
+@media screen and (min-width:481px) and (max-width:700px) {
+/*Entre 481px y 700px*/
+
+
+
+}
+
+/*-----------------------------------@481px-@700px-----------------------------------*/
+
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+
+/*-----------------------------------@701px-@1100px-----------------------------*/
+
+@media screen and (min-width:701px) and (max-width:1100px) {
+/*Entre 701px y 1100px*/
+
+.top {
+	display: flex;
+	direction: row;
+	background-color: rgba(0,0,0,1);
+	justify-content: space-around;
+}
+
+.titulosizquierda {
+	display: flex;
+	flex-direction: column;
+}
+
+.titulosderecha {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display:flex;
+	direction:row;
+}
+
+ul {
+	display:flex;
+	direction: column;
+	justify-content: space-between;
+}
+
+li {
+	background-color: black;
+	margin: 20px 0 0 20px;
+}
+
+img.logo-twitter {
+	width: 50px;
+}
+
+img.logo-facebook{
+	width: 40px;
+}
+
+}
+
+/*-----------------------------------@701px-@1100px----------------------------------*/
+
+
+/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+
+
+/*-----------------------------------@1101px-infinitos_px-----------------------------*/
+
+@media screen and (min-width:1101px) {
+/*Más de 1101px*/
+
+.top {
+	display: flex;
+	direction: row;
+	background-color: rgba(0,0,0,1);
+	justify-content: space-around;
+}
+
+.titulosizquierda {
+	display: flex;
+	flex-direction: column;
+}
+
+.titulosderecha {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display:flex;
+	direction:row;
+}
+
+ul {
+	display:flex;
+	direction: column;
+	justify-content: space-between;
+}
+
+li {
+	background-color: black;
+	margin: 20px 0 0 20px;
+}
+
+body {
+	font-size: 1.5em;
+}
+
+img.logo-twitter {
+	width: 60px;
+}
+
+img.logo-facebook{
+	width: 50px;
+}
+
+
+}
+
+/*-----------------------------------@1101px-infinitos_px----------------------------------*/

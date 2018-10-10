@@ -1,0 +1,9 @@
+﻿MENU sin JS
+
+Ver imagen adjunta.
+Realizar un menú hamburguesa haciendo uso del pseudo selector CSS3 :target.
+
+Referencias útiles:
+https://developer.mozilla.org/es/docs/Web/CSS/:target
+https://www.w3schools.com/cssref/sel_target.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_tab
